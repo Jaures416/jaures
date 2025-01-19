@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    height: 100%;
+}
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+    background-color: black;
+}
+.navbar .logo img{
+color: gold; 
+cursor: pointer;
+height: 100px;
+width: 100px;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    
+}
+.navbar .menu li a{
+    display: block;
+    margin-left: 20px;
+    color: gold;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.navbar .menu li .active{
+    border-bottom: 4px solid gold;
+}
+.navbar .menu li .a:hover{
+    border-bottom: 4px solid gold;
+}
+.vv{
+    border-bottom: 4px solid gold;
+}
+.content{
+background-image: url(IMG-20250114-WA0007.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+padding: 0 5%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+color: gold;
+height: 200vh;
+}
+.content h1{
+    font-size: 40px;
+}
+.content p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.content button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    background: gold;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.produits_texte{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-left: 80px;
+    color: gold;
+}
+.section_produits{
+    padding: 40px 5%;
+}
+.produits{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.produits .carte{
+    width: 310px;
+    background: gold;
+    box-shadow: 0 10px 20px black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.produits .carte img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+.produits .carte .desc{
+    padding: 5px 20px;
+    opacity: 0 8;
+}
+.produits .carte .titre{
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+    padding: 0 20px;
+}
+.produits .carte .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+.produits .carte .prix{
+    color: rgb(255, 0, 0);
+    font-size: 20PX;
+    font-weight: bold;
+}
+.produits .carte .button{
+    font-size: 13px;
+    font-weight: 900;
+    color: black;
+    padding: 10px 18px;
+    border-radius: 1px solid black;
+
+}
+.produits .carte .box .achat:hover{
+    cursor: pointer;
+    background: gold;
+    color: black;
+
+}
+footer{
+    background: gold;
+    height: 10vh;
+}
+footer p{
+    text-align: center;
+    line-height: 10vh;
+
+}
+footer p a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+.ccc{
+    justify-content: space-between;
+}
+.product img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    width: 310px;
+    background: gold;
+    box-shadow: 0 10px 20px black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
+}
+.product{
+    background-color: gold;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
